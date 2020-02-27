@@ -1,0 +1,17 @@
+
+body{
+	background-color: #BBA49F;
+}
+h1{
+	background-color: #DFCECA;
+	padding-left: 100px;
+}
+
+#title{
+	padding-left: 400px;
+}
+
+#bookcase{
+	padding-left: 400px;
+	border-style: inset;
+}

@@ -1,0 +1,73 @@
+body{
+	background-color: black;
+}
+
+/*First Row*/
+#one{
+	background-color: #DAF7A6 ;
+	margin-top: 50px;
+	padding: 50px;
+}
+
+#two{
+	background-color: #FFC300;
+	border: 30px solid black;
+	margin: 1%;
+}
+/*Second Row*/
+#three{
+	background-color: #C70039;
+	border-left: 20px solid black;
+	border-top: 30px solid black;
+}
+
+#four{
+	background-color: #900C3F;
+	border-left: 10px solid black;
+	margin-left: 400px;
+}
+
+#five{
+	background-color: #581845;
+	border-left: 20px solid black;
+	border-right: 10px solid black;
+	margin-left: 500px;
+}
+
+/*Third Row*/
+#six{
+	background-color: #9cff81;
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+#seven{
+	background-color: #ff819c;
+	margin-left: 120px;
+	border-left: 20px solid black;
+}
+
+#eight{
+	background-color: #ffb381;
+	margin-left: 180px;
+	border-left: 20px solid black;
+}
+
+#nine{
+	background-color: #81b6ff;
+	margin-left: 270px;
+	border-left:20px solid black;
+}
+/*Fourth Row*/
+#ten{
+	background-color: #5cffef;
+	border-left: 350px solid black;
+	border-top: 50px solid black;
+}
+
+#eleven{
+	background-color: #a55cff;
+	margin-left: 300px;
+	border-left: 60px solid black;
+	border-right: 350px solid black;
+}
