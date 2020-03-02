@@ -1,0 +1,95 @@
+body{
+	background-color: #99ccff;
+	font-family: "Georgia";
+	color: #33001a;
+	font-size: 12px;
+
+}
+
+h1{
+	font-family: "Times New Roman";
+	width: 450px;
+	text-align: center;
+	margin: auto;
+	padding-top: 100px;
+	color: #4d0026;
+}
+
+#title{
+	text-align: center;
+	margin: auto;
+	padding-top: 5px;
+	color: #660033;
+}
+
+#bookcase{
+	border-style: inset;
+	margin-left: 50px;
+	padding-left: 50px;
+	width: 100px;
+	background-color: #996600;
+
+}
+
+div.inline{
+	display: flex;
+}
+
+/* GRID */
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+}
+
+.grid-item-center{
+	padding:10px;
+	text-align: center;
+	list-style-type: none;
+}
+
+.grid-item-left{
+	padding:10px;
+	text-align: left;
+	list-style-type: none;
+}
+
+.grid-item-block{
+	padding:10px;
+	text-align: block;
+	list-style-type: none;
+}
+/* ---------------------NAVIGATION BAR -------------------------*/
+nav{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+
+ul.nav{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ff9999;
+}
+
+li.nav{
+	float: left;
+}
+
+li.nav a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "Times New Roman";
+}
+
+li.nav a:hover{
+	background-color: 	#9999ff;
+}
+
+/* END OF NAVIGATION BAR*/

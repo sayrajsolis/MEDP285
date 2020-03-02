@@ -1,0 +1,46 @@
+body {
+	background-color: black;
+}
+
+p{
+	color: #e7e7e4	;
+}
+
+
+
+
+
+/* NAVIGATION BAR */
+nav{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+
+ul.nav{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li.nav{
+	float: left;
+}
+
+li.nav a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "Times New Roman";
+}
+
+li.nav a:hover{
+	background-color: #111;
+}
+
+/* END OF NAVIGATION BAR*/
