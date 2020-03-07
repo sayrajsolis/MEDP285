@@ -1,13 +1,116 @@
 body{
-	background-color: #ececdf;
+	background-color: #F2F9FF;
+	font-family: sans-serif;
+	color: #666666;
+}
+
+h1{
+	text-align: left;
+	padding-left: 10px;
+}
+
+h3{
+	padding-left: 30px;
+}
+
+p{
+	font-family: sans-serif;
+	font-size: 12px;
 }
 
 
 
+#red{
+	background-color: #FFE6E6;
+	width:20px;
+	padding-left: 5px;
+	border-radius: 20px;
+}
 
+#yellow{
+	background-color: #FFFEF2;
+	width:20px;
+	padding-left: 5px;
+	border-radius: 20px;
+}
 
+#purple{
+	background-color: #E0E2FF;
+	width:20px;
+	padding-left: 5px;
+	border-radius: 20px;
+}
 
+/*GRID*/
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
 
+.grid-item1{
+	padding:10px;
+	text-align: justify;
+	width: 400px;
+	height: 140px;
+	background-color: #FFE6E6;
+	border-radius: 15%;
+}
+
+.grid-item2{
+	margin-left:400px;
+	padding: 20px;
+	text-align: justify;
+	width: 400px;
+	background-color: #FFFEF2;
+	border-radius: 15%;
+}
+
+.grid-item3{
+	margin-left: 200px;
+	padding: 20px;
+	text-align: justify;
+	width: 400px;
+	background-color: #E0E2FF;
+	border-radius: 15%;
+}
+
+.grid-item11{
+	padding:20px;
+	text-align: justify;
+	width: 400px;
+	height: 180px;
+	background-color: #FFE6E6;
+	border-radius: 15%;
+}
+
+.grid-item22{
+	padding: 20px;
+	width: 400px;
+	height: 320px;
+	text-align: justify;
+	background-color: #FFFEF2;
+	border-radius: 15%;
+}
+
+.grid-item33{
+	padding: 20px;
+	text-align: justify;
+	width: 500px;
+	background-color: #E0E2FF;
+	border-radius: 15%;
+}
+
+.last{
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	background-color:  #E0E2FF;
+	border-radius: 50%;
+	margin-left: 25%;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
 /* NAVIGATION BAR */
 nav{
 	position: absolute;
@@ -21,7 +124,7 @@ ul.nav{
 	margin:0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: #F1F1F1;
 }
 
 li.nav{
@@ -30,15 +133,16 @@ li.nav{
 
 li.nav a{
 	display: block;
-	color: white;
+	color: grey;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-family: "Times New Roman";
+	font-family: sans-serif;
+	font-size: 20px;
 }
 
 li.nav a:hover{
-	background-color: #111;
+	background-color: #E9E9E9;
 }
 
 /* END OF NAVIGATION BAR*/

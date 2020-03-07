@@ -2,8 +2,27 @@ body {
 	background-color: black;
 }
 
+h1{
+	color: white;
+	font-family: monospace;
+	font-size: 50px;
+	text-align: center;
+	border-color: white;
+	border-style: outset;
+	border-width: 10px;
+	padding: 10px;
+}
 p{
-	color: #e7e7e4	;
+	color: #e7e7e4;
+	font-family: monospace;
+	font-weight: bolder;
+	text-align: center;
+	width: 1000px;
+	padding-left: 20%;
+	padding-right: 20%;
+	font-size: 30px;
+	border-style: inset;
+	border-width: 50px;
 }
 
 
@@ -23,7 +42,7 @@ ul.nav{
 	margin:0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: black;
 }
 
 li.nav{
@@ -32,11 +51,12 @@ li.nav{
 
 li.nav a{
 	display: block;
-	color: white;
+	color: green;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-family: "Times New Roman";
+	font-family: monospace;
+	font-size: 20px;
 }
 
 li.nav a:hover{

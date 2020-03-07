@@ -1,0 +1,34 @@
+body{
+	background-color: #305176;
+}
+
+h1{
+	color:#FF83C5;
+	text-align: center;
+}
+
+h3{
+	color: #FF8387;
+	text-align: center;
+}
+
+ul{
+	list-style: none;
+}
+
+.center{
+	text-align: center;
+}
+
+/* Links */
+a{
+	color: #83C5FF;
+
+}
+a:visited {
+	color: #83C5FF;
+}
+
+a:hover{
+	color: yellow; 
+}
