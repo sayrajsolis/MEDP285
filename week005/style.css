@@ -77,14 +77,11 @@ div.inline{
 	text-align: center;
 }
 
-.ital
-{
 
-}
 /* ---------------------NAVIGATION BAR -------------------------*/
 nav{
 	position: absolute;
-	left: 0px;
+	left: 40%;
 	top: 0px;
 	z-index: 2;
 }
