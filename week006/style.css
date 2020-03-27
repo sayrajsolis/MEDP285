@@ -7,3 +7,11 @@
 	and(orientation: potrait){
 
 	}
+
+	.center{
+		text-align: center;
+	}
+
+	body{
+		background-color: #fce6cc;
+	}
