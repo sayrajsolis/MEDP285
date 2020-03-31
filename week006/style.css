@@ -1,20 +1,57 @@
-/*------------iPhone 6, 6s, 7, 8---------*/
-/* Portrait */
-@media only screen
-	and(min-device-width: 375px)
-	and(max-device-width: 667px)
-	and(-webkit-min-device-pixel-ratio: 2)
-	and(orientation: potrait){
-		p{
-			font-size: 10px;
-		}
-
+body{
+	background: rgb(221,148,48);
+	background: linear-gradient(260deg, rgba(221,148,48,1) 0%, rgba(212,138,72,1) 44%, rgba(255,255,255,1) 100%);
 	}
 
-	.center{
+.center{
 		text-align: center;
 	}
 
-	body{
-		background-color: #fce6cc;
+	.container{
+		display: flex;
+		justify-content: space-between;
 	}
+
+
+
+/*--------MEDIA QUERIES---------*/
+
+/*IPHONE X*/
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+
+    	body{
+			font-size: 2rem;
+			background: rgb(221,148,48);
+			background: linear-gradient(0deg, rgba(221,148,48,1) 0%, rgba(212,138,72,1) 44%, rgba(255,255,255,1) 100%);
+		}
+     }
+
+ 
+/* ----------- iPhone 4 and 4S ----------- *
+min-device-width: 320px and max-device-width: 480px
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- *
+min-device-width: 320px and max-device-width: 568px
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- *
+min-device-width: 375px and max-device-width: 667px
+
+/* ----------- iPhone X ----------- *
+min-device-width: 375px and max-device-width: 812px
+
+/* ----------- iPad Pro 10.5" ----------- *
+min-device-width: 834px and max-device-width: 1112px
+
+/* ----------- Kindle Fire HD 8.9" ----------- *
+min-device-width: 1200px and max-device-width: 1600px
+
+/* ----------- Non-Retina Screens ----------- *
+min-device-width: 1200px and max-device-width: 1600px
