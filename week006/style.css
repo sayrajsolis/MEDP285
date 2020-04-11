@@ -48,6 +48,31 @@ h1{
 	}
 }
 
+.trans{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	width: 500px;
+  	height: 50px;
+  	transition: width 2s;
+  	transition-timing-function: ease;
+
+}
+
+.trans:hover {
+	background-color: white;
+	width: 600px; /*calc(auto - 100px);*/
+	font-weight: bold;
+}
+
+.hidden{
+	display: contents;
+	flex-direction: column;
+}
+
+#pad{
+	padding-right: 50px;
+}
 
 
 /*--------MEDIA QUERIES---------*/
