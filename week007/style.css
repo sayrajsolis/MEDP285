@@ -1,0 +1,78 @@
+
+/* LANDING PAGE------------------------------------------------- */
+
+/*.............................................landing background*/
+.landing{
+	width: auto;
+	height: auto;
+	background-color: white;
+	animation-name: landing;
+	animation-duration: 10s;
+	font-family: "arial";
+}
+
+@keyframes landing {
+	from{background-color: black}
+	to{background-color: white}
+}
+
+/*..............................................landing header*/
+.landinghead{
+	width: auto;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	background-color: white;
+	animation-name: landinghead;
+	animation-duration: 5s;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+}
+
+@keyframes landinghead{
+	from{top: 200px; }
+	to{top: 0px;}
+}
+
+/*..................................................bubbles*/
+.container{
+	display: flex;
+	justify-content: center;
+}
+
+.bubble1{
+	border-style: solid;
+	text-align: center;
+	font-size: 50px;
+	padding: 100px;
+	border-radius: 50%;
+	margin: 200px;
+	border-width: 10px;
+	animation: fadeIn ease 8s;
+}
+
+.bubble2{
+	border-style: solid;
+	text-align: center;
+	font-size: 50px;
+	padding: 80px;
+	border-radius: 50%;
+	margin: 200px;
+	border-width: 10px;
+	animation: fadeIn ease 8s;
+}
+
+@keyframes fadeIn{
+	from{opacity: 0%;}
+	to{opacity: 1;}
+}
+.bubble1:hover{
+	padding: 150px;
+	margin: 150px;
+}
+
+.bubble2:hover{
+	padding: 130px;
+	margin: 150px;
+}
