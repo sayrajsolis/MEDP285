@@ -2,7 +2,7 @@
 /* LANDING PAGE------------------------------------------------- */
 
 /*.............................................landing background*/
-.landing{
+#landing{
 	width: auto;
 	height: auto;
 	background-color: white;
@@ -17,7 +17,7 @@
 }
 
 /*..............................................landing header*/
-.landinghead{
+#landinghead{
 	width: auto;
 	padding: 30px;
 	position: relative;
@@ -41,7 +41,7 @@
 	justify-content: center;
 }
 
-.bubble1{
+#bubble1{
 	border-style: solid;
 	text-align: center;
 	font-size: 50px;
@@ -52,7 +52,7 @@
 	animation: fadeIn ease 8s;
 }
 
-.bubble2{
+#bubble2{
 	border-style: solid;
 	text-align: center;
 	font-size: 50px;
@@ -67,12 +67,23 @@
 	from{opacity: 0%;}
 	to{opacity: 1;}
 }
-.bubble1:hover{
+
+#bubble1:hover{
 	padding: 150px;
 	margin: 150px;
 }
 
-.bubble2:hover{
+#bubble2:hover{
 	padding: 130px;
 	margin: 150px;
+}
+
+a:link{
+	color: black;
+	text-decoration: none;
+}
+
+a:visited{
+	color: black;
+	text-decoration: none;
 }
