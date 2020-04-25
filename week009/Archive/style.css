@@ -1,0 +1,74 @@
+
+body{
+	font-family: "arial";
+}
+
+/* LANDING PAGE------------------------------------------------- */
+
+/*.............................................landing background*/
+#landing{
+	width: auto;
+	height: auto;
+	background-color: black;
+	animation-name: landing;
+	animation-duration: 10s;
+
+}
+
+@keyframes landing {
+	from{opacity: 1; display: inline;}
+	to{opacity: 0; display: none;}
+}
+
+/*..............................................landing header*/
+#landinghead{
+	width: auto;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	background-color: white;
+	animation-name: landinghead;
+	animation-duration: 7s;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+}
+
+@keyframes landinghead{
+	from{ background: black; color: white;}
+	to{background: white; color: black;}
+}
+
+/*...................................................grid*/
+.grid{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.item{
+	width: 325px;
+  	height: 216px;
+	object-fit: cover;
+	border: 1px solid hsl(0, 0%, 90%);
+	box-shadow: 0px 0px 10px -3px hsla(0, 0%, 30%, 0.3);
+	margin: 50px 30px 20px 0;
+}
+
+.description{
+	word-wrap: break-word;
+	margin: 0;
+}
+
+
+
+.item_title{
+	margin: 0;
+	text-transform: uppercase;
+  	opacity: 0.75;
+  	letter-spacing: -0.01em;
+}
+
+.photo_items{
+	margin: 10px 30px 20px 0;
+}
