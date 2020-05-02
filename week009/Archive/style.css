@@ -72,3 +72,47 @@ body{
 .photo_items{
 	margin: 10px 30px 20px 0;
 }
+/*..............................................button*/
+button,
+select{
+
+	 background-color: transparent;
+	 font-weight: 700;
+	 font-size: 16px;
+	 color: black;
+	 border: 1px solid hsl(5, 50%, 60%);
+	 border: none;
+	 float: right;
+}
+
+button:hover,
+select:hover{
+	cursor: pointer;
+}
+/*.......................................CENTER*/
+
+.center{
+  	position: fixed;
+  	bottom: 50px;
+  	right: 0;
+
+}
+
+.homebutton, .homebutton:visited {
+	border: solid black;
+	border-radius: 50%;
+	border-width: 5px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin: 50px;
+}
+
+.homebutton:hover{
+	background-color: black;
+	color: white;
+}

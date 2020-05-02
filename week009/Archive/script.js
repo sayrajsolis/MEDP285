@@ -38,7 +38,7 @@ var photo_items = [
 	{
 		title: 'Phantom of The Opera Mask',
 		imageFile: 'mask.jpg',
-		description: 'A night to remember. My favorite movie and Broadway Musical of all time.',
+		description: 'My favorite movie and Broadway Musical of all time.',
 		broadSpecific: -1
 	},
 	{
@@ -58,6 +58,12 @@ var photo_items = [
 		imageFile: 'hawaii.jpg',
 		description: 'A kawaii souvenir from Hawaii',
 		broadSpecific: -1
+	},
+	{
+		title: 'Sticky Sketches',
+		imageFile: 'sketches.jpg',
+		description: 'Really bad skecthes during quarantine',
+		broadSpecific: 1
 	},
 ];
 
@@ -89,4 +95,13 @@ function filterContent(){
 	});
 	generate(filteredItems);// run function to generate content with new filteredItems array
 }
+
+	function randomize() {
+  // array shuffle code credit: https://css-tricks.com/snippets/javascript/shuffle-array/
+  // don't worry about why this works, it's complicated. We are creating a new array based on the original organizedArchiveItems
+  // but the { objects } are in a different order...like shuffling a deck of cards
+  var randomItems = photo_items.sort(() => 0.5 - Math.random());
+  generate(randomItems); // run function to generate content with new randomItems array 
+}
+
 

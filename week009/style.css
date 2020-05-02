@@ -3,8 +3,6 @@
 
 /*.............................................landing background*/
 #landing{
-	width: auto;
-	height: auto;
 	background-color: white;
 	animation-name: landing;
 	animation-duration: 10s;
