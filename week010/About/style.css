@@ -1,0 +1,120 @@
+
+/* LANDING PAGE------------------------------------------------- */
+
+/*.............................................landing background*/
+#landing{
+	width: auto;
+	height: auto;
+	background-color: white;
+	animation-name: landing;
+	animation-duration: 10s;
+	font-family: "arial";
+}
+
+@keyframes landing {
+	from{background-color: black}
+	to{background-color: white}
+}
+
+/*..............................................landing header*/
+#landinghead{
+	width: auto;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	background-color: white;
+	animation-name: landinghead;
+	animation-duration: 7s;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+}
+
+@keyframes landinghead{
+	from{ background: black; color: white;}
+	to{background: white; color: black;}
+}
+
+
+
+/*...........................................IG details*/
+h6{
+	top: 0;
+	padding-left: 15px;
+}
+.pfp{
+	width: 40px; height: 35px;
+	margin: 0;
+	padding-top: 20px;
+	border-radius: 50%;
+}
+
+.ighead{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.location{
+	padding: 0; 
+	margin-top: 0; margin-bottom: 0; padding-left: 10px; padding-top: 3px; padding-bottom: 5px;
+	font-size: 12px;
+}
+
+.handle{
+	padding-top: 10px; padding-left: 10px; padding-bottom: 0; 
+	margin-bottom: 0;
+	size: 12px; font-weight: bold;
+}
+/*............................................photo*/
+div.polaroid{
+	width: 30%;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+	margin-right: auto;margin-left: auto;
+	max-height: 50%;
+	cursor: help;
+	padding-left: 15px; padding-right: 15px;
+}
+
+div.container{
+	text-align: center;
+	padding: 10px 20px;
+}
+
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.homebutton, .homebutton:visited {
+	border: solid black;
+	border-radius: 50%;
+	border-width: 5px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 50px;
+}
+.homebutton .img-top{
+	display: none;
+	z-index: 99;
+}
+.homebutton:hover{
+	background-color: black;
+	color: white;
+}
+
+.homebutton:hover .img-top{
+	display: inline;
+}
+
+.homebutton:hover .img-bot{
+	display: none;
+}

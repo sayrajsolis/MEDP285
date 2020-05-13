@@ -1,0 +1,158 @@
+
+body{
+	font-family: "arial";
+}
+
+/* LANDING PAGE------------------------------------------------- */
+
+/*.............................................landing background*/
+#landing{
+	width: auto;
+	height: auto;
+	background-color: black;
+	animation-name: landing;
+	animation-duration: 10s;
+
+}
+
+@keyframes landing {
+	from{opacity: 1; display: inline;}
+	to{opacity: 0; display: none;}
+}
+
+/*..............................................landing header*/
+#landinghead{
+	width: auto;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+	background-color: white;
+	animation-name: landinghead;
+	animation-duration: 7s;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+}
+
+@keyframes landinghead{
+	from{ background: black; color: white;}
+	to{background: white; color: black;}
+}
+
+/*...................................................grid*/
+.grid{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 100px; padding-right: 0px;
+}
+
+.item{
+  	height: 300px;
+  	padding-bottom: 100px;
+	object-fit: cover;
+	border: 1px solid hsl(0, 0%, 90%);
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	max-height: 50%;
+	cursor: help;
+}
+
+.img{
+	max-width: 200px;
+	max-height: 200px;
+	right: 0;
+	margin-left: auto; margin-right: auto;
+	display: block; 
+	padding: 10px;
+}
+.description{
+	margin: 0;
+	font-style: italic;
+	box-sizing: inherit;
+	padding: 0;
+	font-size: 15px;
+}
+.container{
+	text-align: center;
+	overflow-wrap: break-word;
+  	word-wrap: break-word;
+  	max-width: 200px;
+  	margin-left: auto; margin-right: auto;
+  	padding-top: 0;
+}
+
+.title{
+	margin-bottom: 5px;
+}
+
+.item_title{
+	margin: 0;
+	text-transform: uppercase;
+  	opacity: 0.75;
+  	letter-spacing: -0.01em;
+}
+
+.photo_items{
+	margin: 10px 20px 20px 0;
+}
+/*..............................................button*/
+button,
+select{
+
+	 background-color: transparent;
+	 font-weight: 700;
+	 font-size: 16px;
+	 color: black;
+	 border: 1px solid hsl(5, 50%, 60%);
+	 border: none;
+	 float: right;
+	 float: top;
+	 margin-bottom: 60px;
+}
+
+button:hover,
+select:hover{
+	cursor: pointer;
+}
+/*.......................................CENTER*/
+
+.home{
+  	position: fixed;
+  	bottom: 50px;
+  	right: 0;
+}
+
+.bio{
+	float: top;
+	text-align: center;
+}
+
+.homebutton, .homebutton:visited {
+	border: solid black;
+	border-radius: 50%;
+	border-width: 5px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin: 30px;
+}
+.homebutton .img-top{
+	display: none;
+	z-index: 99;
+}
+.homebutton:hover{
+	background-color: black;
+	color: white;
+}
+
+.homebutton:hover .img-top{
+	display: inline;
+}
+
+.homebutton:hover .img-bot{
+	display: none;
+}

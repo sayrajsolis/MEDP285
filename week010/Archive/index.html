@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Archive</title>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+	<header>
+		<h1 id="landinghead">Archive</h1>
+		<p class="bio"><em>My personality has become materialized and tangible.</em><br>During quarantine, the objects around my house remind me that I have a life outside these walls. <br>They serve me as a window to the time before the chaos. <br>It also reminds me that there will be a tomorrow and a future where I can bring in more memories into my room.</p>
+	</header>
+	<div id="landing">
+
+	</div>
+	
+	<div>
+		<button onclick="randomize()">All Random</button>
+		<select name="filtering" id="filter" onchange="filterContent()">
+			<option value="" disabled selected>Filter by</option>
+			<option value="-1">Specific items</option>
+			<option value="1">Broad items</option>
+		</select>
+	</div>
+
+	<div class="grid">
+		<!--content added from js file -->
+	</div>
+
+	<!--script tag -->
+	<script type="text/javascript" src="script.js"></script> 
+	<div class="home">
+		<a href="../index.html" class="homebutton"><img src="homeicon.png" height="30x" width="30px" class="img-bot"><img src="homeicon2.png" height="30px" width="30px" class="img-top"></a>
+	</div>
+
+</body>
+</html>
