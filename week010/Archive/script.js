@@ -18,12 +18,6 @@ var photo_items = [
 		broadSpecific: -1
 	},
 	{
-		title: 'Arduino Bugs-Eye',
-		imageFile: 'arduino1.jpg',
-		description: 'My big computer',
-		broadSpecific: -1
-	},
-	{
 		title: 'My Wall',
 		imageFile: 'wall.jpg',
 		description:'I dont have my own room, but I have my own wall',
@@ -33,7 +27,7 @@ var photo_items = [
 		title:'Nightstand',
 		imageFile: 'nightstand.jpg',
 		description: 'A cheap shrine for my collectables',
-		broadSpecific: -1
+		broadSpecific: 1
 	},
 	{
 		title: 'Phantom of The Opera Mask',

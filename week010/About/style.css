@@ -118,3 +118,8 @@ div.container{
 .homebutton:hover .img-bot{
 	display: none;
 }
+
+
+.bio{
+	text-align: center;
+}
