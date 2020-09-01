@@ -7,11 +7,34 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 <style>
-	body { margin: 0; padding: 0; }
-	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+	body { margin: 0; padding: 0;}
+	#map { position: absolute; top: 0; bottom: 0; width: 50%; height:70%; margin-top: 300px;}
+	h1{color: navy; font-family: Arial, Helvetica, sans-serif;}
+	#description{font-size: 14px; font-family: Arial, Helvetica, sans-serif;}
+	.box{width: 100%;}
+	.box2{box-sizing: border-box; width: 50%; border:5px solid red; float: right}
 </style>
 </head>
 <body>
+	<img src="https://static1.squarespace.com/static/58feabfc86e6c0d9650e637e/t/5978b3056f4ca3e9c1543217/1501082373871/New+logo+with+tag+line+July+2017.jpg?format=1500w" width="30%">
+	<h1>Collge Bike Tour 2015</h1>
+	<p id="description">In 2015, I participated in a program called Cylcing Smarts by the non-profit I challenge Myself. As a junior in high school with strict parents, I did not know how to ride a bike. <br>The program held my hand, and with a supportivee team, guided me and pushed me to complete a 7-day 400 mile bike ride to 7 campuses.</p>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box2">Here are the list of locations visited<br> 
+			<ol>
+				<li>Syrcause University</li>
+				<li>Cornell University</li>
+				<li>SUNY Binghamton</li>
+				<li>SUNY Oneonta</li>
+				<li>SUNY Cobleskill</li>
+				<li>Bard College</li>
+				<li>West Point Academy</li>
+				<li>Home: NYC</li>
+			</ol>
+		</div>
+
+
 <div id="map"></div>
  
 <script>
@@ -19,8 +42,8 @@
 var map = new mapboxgl.Map({
 		container: 'map',
 		style: 'mapbox://styles/mapbox/streets-v11',
-		center: [-74.2179, 42.2994],
-		zoom: 8
+		center: [-74.9179, 42.2500],
+		zoom: 7.4
 });
  
 map.on('load', function() {
