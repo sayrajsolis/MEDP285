@@ -17,8 +17,10 @@
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1Ijoic2F5cmFqc29saXMiLCJhIjoiY2tlazlnbWg4MDRwZzJ4bnFwYXFvYThncCJ9.lJo8HuQDAFmDIvmpfD8q7A';
 var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11'
+		container: 'map',
+		style: 'mapbox://styles/mapbox/streets-v11',
+		center: [-74.2179, 42.2994],
+		zoom: 8
 });
  
 map.on('load', function() {
@@ -54,6 +56,48 @@ map.addSource('point', {
 'geometry': {
 'type': 'Point',
 'coordinates': [-76.4735, 42.4534]
+
+}
+},
+{
+'type': 'Feature',
+'geometry': {
+'type': 'Point',
+'coordinates': [-74.4991, 42.6713]
+
+}
+},
+{
+'type': 'Feature',
+'geometry': {
+'type': 'Point',
+'coordinates': [-75.9699, 42.0893]
+
+}
+},
+{
+'type': 'Feature',
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.9101, 42.0204]
+
+}
+},
+
+{
+'type': 'Feature',
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.9625, 41.3918]
+
+}
+},
+
+{
+'type': 'Feature',
+'geometry': {
+'type': 'Point',
+'coordinates': [-73.9262, 40.8558]
 
 }
 },
