@@ -21,7 +21,8 @@
 	<p id="description">In 2015, I participated in a program called Cylcing Smarts by the non-profit I challenge Myself. As a junior in high school with strict parents, I did not know how to ride a bike. <br>The program held my hand, and with a supportivee team, guided me and pushed me to complete a 7-day 400 mile bike ride to 7 campuses.</p>
 	<div class="container">
 		<div class="box"></div>
-		<div class="box2">Here are the list of locations visited<br> 
+		<div class="box2">
+			<br>Here are the list of locations visited<br> 
 			<ol>
 				<li>Syrcause University</li>
 				<li>Cornell University</li>
@@ -33,7 +34,7 @@
 				<li>Home: NYC</li>
 			</ol>
 		</div>
-
+	</div>
 
 <div id="map"></div>
  
@@ -48,10 +49,10 @@ var map = new mapboxgl.Map({
  
 map.on('load', function() {
 map.loadImage(
-'https://lh3.googleusercontent.com/proxy/tKCPpveGjZP8fbMSB9pQwkgUwYz7l8CbjYdNxCPrQahMs4ty3ZMDisxhYreuZhdr08YERRse1q_gj1rQKIKPHMjmTB4V4e2KuNYLrOg8NtghD-TRoYSIdnxZ2td07Xqoisg',
+'https://upload.wikimedia.org/wikipedia/commons/7/7c/201408_cat.png', //I want to add this one instead https://i.pinimg.com/originals/42/de/ad/42dead9c1e742fd6b36e87cb4ec88c01.png
 function(error, image) {
 if (error) throw error;
-map.addImage('cat', image);
+map.addImage('bike', image);
 map.addSource('point', {
 'type': 'geojson',
 'data': {
@@ -132,7 +133,7 @@ map.addLayer({
 'type': 'symbol',
 'source': 'point',
 'layout': {
-'icon-image': 'cat',
+'icon-image': 'bike',
 'icon-size': 0.25
 }
 });
