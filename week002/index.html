@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>True Damage</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
+<style type="text/css">
+  
+</style>
+</head>
+<body>
+	<h1>Giants <br><small>True Damage</small><br></h1>
+	<h2>(ft. Becky G, Keke Palmer, SOYEON, DUCKWRTH, Thutmose) </h2>
+  <div class="audio-player">
+    <div id="play-btn"></div>
+    <div class="audio-wrapper" id="player-container" href="javascript:;">
+      <audio id="player" ontimeupdate="initProgressBar()">
+        <source src="true-damage.mp3" type="audio/mp3"> <!--audi clip-->
+      </audio>
+    </div>
+    <div class="player-controls scrubber">
+      <p>Giants <br><small>True Damage</small> </p>
+      <span id="seekObjContainer">
+        <progress id="seekObj" value="0" max="1"></progress>
+      </span>
+      <br>
+      <small style="float: left; position: relative; left: 15px;" class="start-time"></small>
+      <small style="float: right; position: relative; right: 20px;" class="end-time"></small>
+
+    </div>
+    <div class="album-image" style="background-image: url('https://m.media-amazon.com/images/I/71LwtK+CYPL._SS500_.jpg')"></div>
+  </div>
+
+
+<video id="video" width="960" height="720">
+	<source src="videos/video.webm" type=video/webm> 
+	<source src="videos/video.ogg" type=video/ogg> 
+	<source src="videos/video.mp4"  type=video/mp4> 
+</video>
+<!-- video controls, we'll use javascript to activate them
+ -->
+ <div id="video-controls">
+			<img type="image" id="play-pause"></img>
+            <img type="image" src="ff.png" id="ff" class="fast_forward"></img>
+            <img type="image" src="x2.png" id="fast" class="x2"></img>
+            <img type="image" src="reverse.png" id="reverse" class="reverse"></img>
+            
+			<img type="image" id="mute"></img>
+
+			<img type="image" src="full-screen.png" id="full-screen"></img>
+			<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+			<br>
+			<input type="range" id="seek-bar" value="0">
+
+		</div>
+</div>
+
+
+
+<script src="script.js"></script>
+     
+
+</body>
+</html>

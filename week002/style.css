@@ -1,0 +1,192 @@
+
+  html {
+  height: 100%;
+  display: table;
+  margin: auto;
+}
+
+h1{
+	padding-top: 10%;
+	color: #efcb32;
+	font-weight: bold;
+	text-align: center;
+}
+h1 > small {
+	color: #60c4a6;
+}
+h2{
+	margin-top: 0;
+	color: #ced0a7;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+body {
+  height: 100%;
+  display: table-cell;
+  /*vertical-align: middle;*/
+  background: rgb(62, 53, 212);
+}
+/*--------------------- MUSIC PLAYER ---------*/
+.audio-player {
+  background: #efcb32;
+  border: 1px solid #dfdfdf;
+  width: 50vw;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  margin: 4rem 0 4rem 0;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.audio-player .album-image {
+  min-height: 100px;
+  width: 110px;
+  background-size: cover;
+}
+.audio-player .player-controls {
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.0rem;
+  flex: 3;
+}
+.audio-player .player-controls progress {
+  width: 90%;
+}
+.audio-player .player-controls progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  color: blue;
+  height: 7px;
+}
+.audio-player .player-controls progress[value]::-webkit-progress-bar {
+  background-color: #60c4a6;
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  color: blue;
+}
+.audio-player .player-controls progress::-webkit-progress-value {
+  background-color: #3e35d4;
+}
+.audio-player .player-controls p {
+  font-size: 1.6rem;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #3e35d4;
+}
+.audio-player #play-btn {
+  background-image: url("play.png");
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+  margin: 2rem 0 2rem 2rem;
+}
+.audio-player #play-btn.pause {
+  background-image: url("pause.png");
+}
+
+/*-------------VIDEO PLAYER-------------*/
+#video-container {
+  width: 960px;
+  height: 720px;
+  position: relative;
+}
+
+button {
+  background: rgb(62, 53, 212);
+  border: 0;
+  color: #EEE;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+#seek-bar {
+  width: 950px;
+}
+
+#volume-bar {
+  width: 100px;
+  float: right;
+}
+
+#video-controls {
+  position: absolute;
+  bottom: -150px;
+  width: 960px;
+  padding: 5px;
+  opacity: 1;
+  background-color: #efcb32;
+}
+#video-container:hover #video-controls {
+  opacity: .9;
+}
+/*button independent settings*/
+#full-screen{
+  margin-right: 100px;
+}
+#ff{
+  width:50px;
+  height:50px;
+}
+#fast{
+  width:50px;
+  height:50px;
+}
+#reverse{
+  width:50px;
+  height:50px;
+}
+
+#full-screen{
+    width:50px;
+  height:50px;
+}
+
+
+/*mute and unmute*/
+#video-controls #mute{
+  background-image: url("mute.png");
+  background-size: cover;
+  width:50px;
+  height:50px;
+}
+#video-controls #mute.unmute{
+  background-image: url("unmute.png");
+}
+
+/*pause and play buttons*/
+#video-controls #play-pause{
+  background-image: url("play.png");
+  background-size: cover;
+  width:50px;
+  height:50px;
+}
+#video-controls #play-pause.pause{
+  background-image: url("pause.png");
+}
+
+/*range bars for volumne and progress*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: #c3333a;
+    }
+    
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 15px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #5561b6;
+      box-shadow: -950px 0 0 950px #43e5f7;
+    }
