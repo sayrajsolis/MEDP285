@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myP">Hunter College Rockz!</p>
+
+<button type="button" id="increment">Increment</button>
+<button type="button" id="decrement">Decrement</button>
+<button type="button" id="red">Red</button>
+<button type="button" id="green">Green</button>
+<button type="button" id="blue">Blue</button>
+
+<script>
+
+var a; a = 75;
+var r; r = 0;
+var g; g = 0;
+var b; b=0;
+
+
+var increment = document.getElementById("increment");
+var decrement = document.getElementById("decrement");
+var red = document.getElementById("red");
+var green = document.getElementById("green");
+var blue = document.getElementById("blue");
+
+
+
+//increment//
+document.getElementById("myP").style.fontSize = a+"px";
+increment.addEventListener("click", function(){
+  a = a +1;
+  document.getElementById("myP").style.fontSize = a+"px";
+  console.log(a);
+});
+
+//decrement//
+decrement.addEventListener("click", function(){
+		a = a-1;
+		document.getElementById("myP").style.fontSize = a+"px";
+		console.Log(a);
+	});
+	
+
+
+//COLORS BUTTONS/////////////////////////////////
+red.addEventListener("click", function(){
+  r = r+10;
+  document.getElementById("myP").style.color = "rgb"+"("+r+",0,0)";
+
+});
+
+green.addEventListener("click", function(){
+  g = g+10;
+  document.getElementById("myP").style.color = "rgb"+"("+"0,"+g+",0)";
+});
+
+blue.addEventListener("click", function(){
+	b = b+10;
+	document.getElementById("myP").style.color = "rgb"+"("+"0,0,"+b+")";
+});
+
+
+</script>
+
+</body>
+</html>
