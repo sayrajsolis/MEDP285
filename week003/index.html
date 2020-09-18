@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>hallow</title>
+ <style type="text/css">
+  canvas{border-radius: 20px;}
+  body{
+    background-image: url("png/hallow-trees.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #center{
+      display: flex;
+      justify-content: center;
+      padding-top: 200px;
+  }
+  #title{
+    text-align: center;
+    color: #ffe7a6;
+    font-family: monospace;
+  }
+  p{text-align: center; font-size: 20px; font-weight: bold; color: blue;}
+  </style>
+</head>
+<body>
+    <h1 id="title">Welcome to the Hallow!</h1>
+  <div id="center">
+      <canvas id="terraria" width="600" height="300"></canvas><br>    
+  </div>
+        <p>Click the bleeder!</p>
+
+<script type="application/javascript">
+var background2 = new Image();
+var unicorn = new Image();
+var canvas = document.getElementById('terraria');
+var ctx = canvas.getContext("2d");
+var x2 = canvas.width;
+var y2 = canvas.height;
+var heading = document.querySelector('h1');
+
+
+background2.src = "png/BiomeBannerHallow.png";
+unicorn.onload = animate;
+unicorn.src = "png/Terraria_Unicorn.gif";
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);  // clear canvas
+  ctx.drawImage(background2, -50, -10, 800,300);                       // draw background
+
+  //console.log(x);
+  
+  if (x2 > -125){
+  requestAnimationFrame(animate);       
+}
+
+  ctx.drawImage(unicorn, x2, y2-214, 200,154);                       // draw image at current position
+  if(x2 == -120){   // loop
+  x2 = canvas.width;
+  }
+}
+canvas.addEventListener('mousedown', function(e) {
+y2 -= 20;x2 -= 20;
+});
+canvas.addEventListener('mouseup', function(e) {
+y2 += 20;
+});
+
+canvas.addEventListener('mouseout', function(e){
+  background2.src ="png/crimson0.png";
+  unicorn.src = "png/bleeder.png";
+  heading.textContent = "Welcome to the Crimson!";
+  heading.color = 'red';
+});
+
+canvas.addEventListener('mouseover', function(e){
+  background2.src ="png/BiomeBannerHallow.png";
+  unicorn.src = "png/Terraria_Unicorn.gif";
+  heading.textContent = "Welcome to the Hallow!";
+  heading.color = '#ffe7a6';
+
+});
+</script>
+</body>
+</html>
+
+
