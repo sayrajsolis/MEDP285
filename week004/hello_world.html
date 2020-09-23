@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Howdy</title>
+
+    <style type="text/css">
+    	.grid{
+    		padding: 20px;
+    		display: grid;
+    		grid-template-columns: 200px 200px 200px;
+    		grid-gap: 10px;
+    		background-color: powderblue;
+    		color: black;
+    	}
+    	#message{
+    		background-color: lightgrey;
+    		border-radius: 10px;
+    		padding: 25px;
+    		font-size: 2rem;
+    	}
+    	#safety{
+    		background-color: lightgreen;
+    		border-radius: 10px;
+    		padding: 25px;
+    		font-size: 2rem;
+    	}
+    	#num{
+    		background-color: cyan;
+    		border-radius: 10px;
+    		padding: 25px;
+    		font-size: 2rem;
+    	}
+    	#float{
+    		background-color: lightyellow;
+    		border-radius: 10px;
+    		padding: 25px;
+    		font-size: 2rem;
+    	}
+    	#quote{
+    		background-color: violet;
+    		border-radius: 10px;
+    		padding: 25px;
+    		font-size: 2rem;
+    	}
+    	#mars{
+    		background-color: crimson;
+    		border-radius: 10px;
+    		padding: 25px;
+    		font-size: 2rem;
+    	}
+     	#random{
+    		background-color: orange;
+    		border-radius: 10px;
+    		padding: 25px;
+    		font-size: 2rem;
+    	}
+    	#bool{
+    		background-color: purple;
+    		border-radius: 10px;
+    		padding: 25px;
+    		font-size: 2rem;
+    	}
+
+    </style>
+  </head>
+  <body>
+  	<div class="grid">
+  		<div id="message"></div>
+	  	<div id="safety"></div>
+	  	<div id="num"></div>
+	  	<div id="float"></div>
+	  	<div id="quote"></div>
+	  	<div id="mars"></div>
+	  	<div id="random"></div>
+	  	<div id="bool"></div>
+  	</div>
+
+
+  <script type="text/javascript">
+message = "Howdy" + " " + "partner";
+safety = "wear"+" "+"a"+" "+"mask!"
+num = 420;
+float = 20.20;
+quote = "Woohoo!"+" "+"I"+" "+"love"+" "+"to"+" "+"code!"+" "+"#javascript";
+age = 21+3.5;
+mars = "I"+" "+"will"+" "+"be"+" "+age+" "+"years"+" "+"old"+" "+"when"+" "+"we"+" "+"start"+" "+"sending"+" "+"people"+" "+"to"+ " " + "Mars.";
+
+
+random_number = Math.floor(Math.random()*100);
+
+console.log(message);
+console.log(safety);
+console.log(num);
+console.log(float);
+console.log(quote);
+console.log(mars);
+console.log(random_number);
+console.log(Number.isInteger(Math.ceil(random_number)));
+
+document.getElementById("message").innerHTML = message;
+document.getElementById("safety").innerHTML = safety;
+document.getElementById("num").innerHTML = num;
+document.getElementById("float").innerHTML = float;
+document.getElementById("quote").innerHTML = quote;
+document.getElementById("mars").innerHTML = mars;
+document.getElementById("random").innerHTML = random_number;
+document.getElementById("bool").innerHTML = Number.isInteger(Math.ceil(random_number));
+
+  </script>
+  </body>
+</html>
