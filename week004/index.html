@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			background-image: url('map.jpg'); 
+			background-position: center;
+		}
+		label{
+			color: white;
+			font-size: 14px;
+		}
+		p{
+			background-color: white;
+			font-size: 30pt;
+			font-family: monospace;
+			text-align: center;
+			margin-right: 30%;
+			margin-left: 30%;
+			border-radius: 20px;
+		}
+		#role, #char{
+			display: flex;
+			justify-content: center;
+			background-color: darkgrey; 
+			margin-right: 30%;
+			margin-left: 30%;
+			border-radius: 20px;
+		}
+
+	</style>
+	<label for="color">Select a color:</label>
+	<select id="color">
+		<option value="">Choose a color:</option>
+		<option value="red">Red</option>
+		<option value="blue">Blue</option>
+		<option value="green">Green</option>
+		<option value="pink">Pink</option>
+		<option value="orange">Orange</option>
+		<option value="yellow">Yellow</option>
+		<option value="black">Black</option>
+		<option value="white">White</option>
+		<option value="purple">Purple</option>
+		<option value="brown">Brown</option>
+		<option value="cyan">Cyan</option>
+		<option value="lime">Lime</option>
+	</select>
+
+	<p></p>
+	<div id="role"></div>
+	<div id="char"></div>
+
+<script type="text/javascript">
+	const select = document.querySelector('select');
+	const paragraph = document.querySelector('p');
+	const char = document.getElementById("char");
+	const role = document.getElementById('role');
+
+	select.addEventListener('change', setColor);
+	function setColor(){
+		const choice = select.value;
+
+		if (choice === 'red') {
+			paragraph.textContent = "You are the";
+			paragraph.style.color = 'red';
+			char.innerHTML = "<img src='1_red.png'>";
+			role.innerHTML = "<img src='impostor.png'>";
+		}
+		else if (choice === 'blue') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'blue';
+			char.innerHTML = "<img src='2_blue.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'green') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'green';
+			char.innerHTML = "<img src='3_green.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'pink') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'pink';
+			char.innerHTML = "<img src='4_pink.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'orange') {
+			paragraph.textContent = "You are the";
+			paragraph.style.color = 'orange';
+			char.innerHTML = "<img src='5_orange.png'>";
+			role.innerHTML = "<img src='impostor.png'>";
+		}
+		else if (choice === 'yellow') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = '#ebd834';
+			char.innerHTML = "<img src='6_yellow.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'black') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'black';
+			char.innerHTML = "<img src='7_black.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'white') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'grey';
+			char.innerHTML = "<img src='8_white.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'purple') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'purple';
+			char.innerHTML = "<img src='9_purple.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'brown') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'brown';
+			char.innerHTML = "<img src='10_brown.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'cyan') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'cyan';
+			char.innerHTML = "<img src='11_cyan.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+		else if (choice === 'lime') {
+			paragraph.textContent = "You are a";
+			paragraph.style.color = 'lime';
+			char.innerHTML = "<img src='12_lime.png'>";
+			role.innerHTML = "<img src='crewmate.png'>";
+		}
+	}
+
+</script>
+</body>
+</html>
