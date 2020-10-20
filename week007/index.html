@@ -9,22 +9,25 @@
 	<h1>Killjoy</h1>
 	<div id="home">
 		<img src="img/killjoy.png" alt="Killjoy" id="home-image">
-		<div id="bio-description">
-			<button id="request-bio" onclick="loadDoc()"> Learn more about agent Killjoy</button>
-			<div id="bio"></div>	
-		</div>		
-	</div>
+		<div>
+			<div id="bio-description">
+				<button id="request-bio" onclick="loadDoc()"> Learn more about agent Killjoy</button>
+				<div id="bio"></div>	
+			</div>
+			<br><br>
+			<div id="abilities">
+				<label for="ability">Select an ability:</label>
+				<select id="color">
+					<option value=""></option>
+					<option value="alarmbot">Alarmbot</option>
+					<option value="turret">Turret</option>
+					<option value="nanoswarm">Nanoswarm</option>
+					<option value="lockdown">Lockdown</option>
+				</select>
+				<div id="ability-description"></div>
+			</div>
 
-	<div id="abilities">
-		<label for="ability">Select an ability:</label>
-		<select id="color">
-			<option value=""></option>
-			<option value="alarmbot">Alarmbot</option>
-			<option value="turret">Turret</option>
-			<option value="nanoswarm">Nanoswarm</option>
-			<option value="lockdown">Lockdown</option>
-		</select>
-		<div id="ability-description"></div>
+		</div>		
 	</div>
 
 
