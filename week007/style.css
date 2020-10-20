@@ -1,6 +1,7 @@
 body{
 	background: #17212a;
 	color: white;
+	font-family: 'Oswald', sans-serif;
 }
 
 h1{
@@ -8,6 +9,11 @@ h1{
 	color: #dc435e;
 	text-align: center;
 	font-size: 3em;
+}
+
+iframe{
+	width: 500px;
+	height: 300px;
 }
 
 #home{
