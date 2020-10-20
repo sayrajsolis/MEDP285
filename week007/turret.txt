@@ -1,0 +1,2 @@
+E - TURRET
+EQUIP a Turret. FIRE to deploy a turret that fires at enemies in a 180 degree cone. HOLD EQUIP to recall the deployed turret.

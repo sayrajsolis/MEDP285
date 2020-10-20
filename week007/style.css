@@ -1,0 +1,27 @@
+body{
+	background: #17212a;
+	color: white;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif;
+	color: #dc435e;
+	text-align: center;
+	font-size: 3em;
+}
+
+#home{
+	display: flex;
+}
+
+#bio-description{
+
+}
+
+#home-image{
+	max-width: 30%;
+}
+
+#bio{
+	color: white;
+}

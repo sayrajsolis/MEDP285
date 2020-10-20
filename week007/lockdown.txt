@@ -1,0 +1,2 @@
+X - LOCKDOWN
+EQUIP the Lockdown device. FIRE to deploy the device. After a long windup, the device Detains all enemies caught in the radius. The device can be destroyed by enemies.
