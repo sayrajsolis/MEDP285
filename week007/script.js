@@ -5,6 +5,7 @@
  // find the desired selectors
   var bioBTN = document.getElementById('request-bio');
   var bio = document.getElementById('bio-description');
+  var country = document.getElementById('country');
   // set up a request
   var request = new XMLHttpRequest();
   // keep track of the request
@@ -18,7 +19,9 @@
       // check if the request is successful
       if(request.status === 200) {
         // update the HTML of the element
-        bio.innerHTML = request.responseText;        
+        country.innerHTML = "<img src= 'https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png' width = '5%'>";
+        bio.innerHTML = request.responseText;
+
       } else {
         // otherwise display an error message
         bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
