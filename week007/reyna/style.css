@@ -25,7 +25,8 @@ iframe{
 }
 
 #home-image{
-	max-height: 800px;
+
+  max-height: 60rem;
 }
 
 #bio{
@@ -35,4 +36,58 @@ iframe{
 #flex{
 	display: flex;
 	justify-content: center;
+}
+
+img.nav{
+  height: 50px;
+}
+
+#color-palette{
+  width: 200px;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	body{
+
+  	}
+  	#home{
+  		display: inline;
+  		max-width: 100%;
+  		max-height: 100%;
+  	}
+  	#home-image{
+  		max-height: 100%;
+  		max-width: 100%;
+  		padding-top: 10%;
+  		margin-right: 15%;
+  		margin-left: 15%;
+  	}
+
+  	#home-mobile{
+  		text-align: center;
+  		font-size: 5em;
+  		max-height: 100%;
+  		max-width: 100%;
+  	}
+  	img.nav{
+	height: 200px;
+  	}
+
+  	button#request-bio{
+  		width: 80%;
+  		font-size: 0.6em;
+  	}
+  	#color{
+  	width: 50%;
+  	}
+
+    #color-palette{
+      width: 50rem;
+    }
+
+
 }
