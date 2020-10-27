@@ -13,7 +13,7 @@
     // check if the response data send back to us 
     if(request.readyState === 4) {
       // add a border
-      bio.style.border = '1px solid #e8e8e8';
+      //bio.style.border = '1px solid #e8e8e8';
       // uncomment the line below to see the request
       // console.log(request);
       // check if the request is successful
@@ -46,7 +46,7 @@
   const select = document.querySelector('select');
   const abilityDESC = document.getElementById("ability-description");
   const abilityDEMO = document.getElementById("ability-demo");
-
+  const videoTheme = document.querySelector("iframe");
 
 select.addEventListener('change', setAbility);
   function setAbility(){

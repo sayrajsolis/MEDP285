@@ -31,3 +31,8 @@ iframe{
 #bio{
 	color: white;
 }
+
+#flex{
+	display: flex;
+	justify-content: center;
+}
